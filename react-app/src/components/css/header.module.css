@@ -1,0 +1,83 @@
+header {
+    background-color: rgb(124, 177, 233);
+    color: white;
+    display: grid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    grid-template-columns: 0 0 1fr;
+}
+
+header h2 {
+    margin: 0;
+    padding: 1rem;
+    font-size: 2.5rem;
+    font-weight: normal;
+    visibility: hidden;
+}
+
+.searchInput {
+    justify-self: center;
+}
+
+header div i {
+    padding-right: 0; 
+}
+
+@media (min-width: 768px) {
+    header {
+        grid-template-columns: 10fr 6fr 10fr;
+    }
+
+    header h2 {
+        justify-self: center;
+        visibility: visible;
+    }
+
+    .searchInput {
+        justify-self: flex-end;
+    }
+
+    header div i {
+        padding-right: 20px; 
+    }
+}
+
+header div {
+    align-self: center;
+    display: flex;
+    align-items: center;
+}
+
+header div input {
+    border: none;
+    color: white;
+    border-bottom: 2px solid rgb(167, 201, 233);
+    background-color: rgb(124, 177, 233);
+    padding-right: 8px;
+    font-size: 1.3rem;
+    transition-duration: 200ms;
+}
+
+header div input:hover {
+    border-color: rgb(179, 225, 228);
+    transition-duration: 200ms;
+}
+
+input, button, textarea {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+header div input:focus {
+    outline: none;
+    border-color: white;
+}
+
+header.under {
+    position: relative;
+}

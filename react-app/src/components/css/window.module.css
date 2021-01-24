@@ -1,0 +1,290 @@
+.windowContainer {
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(124, 177, 233);
+    width: 100%;
+    border-top: 2px solid rgb(121, 121, 121);
+}
+
+.postOverlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.713);
+}
+
+.breakContainer {
+    flex-direction: column;
+}
+
+@media (min-width: 375px) {
+    .windowContainer {
+        width: auto;
+        border-left: 2px solid rgb(121, 121, 121);
+        border-radius: 8px 0 0 0;
+    }
+
+    .breakContainer {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 425px) {
+    
+}
+
+@media (min-width: 576px) {
+    .windowContainer {
+        visibility: visible;
+    }
+
+    .postOverlay {
+        visibility: hidden;
+    }
+}
+
+.windowContainer h3 {
+    margin: 0;
+    padding: 0.5rem 0 0.5rem 0.8rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.topWindow {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 2px solid rgb(121, 121, 121);
+}
+
+div.topWindow button {
+    display: flex;
+    align-items: center;
+    background-color: rgb(235, 139, 139);
+    color: white;
+    font-size: 1rem;
+    padding: 12px;
+    transition: 100ms;
+}
+
+div.topWindow button:hover {
+    background-color: rgb(235, 176, 176);
+    transition: 200ms;
+}
+
+div.topWindow button:active {
+    background-color: white;
+    color: rgb(235, 139, 139);
+    transition: 100ms;
+}
+
+div.bodyWindow {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.bodyWindow input:focus,
+div.bodyWindow textarea:focus {
+    outline: none;
+    border-color: rgb(121, 121, 121);
+    transition: 200ms;
+}
+
+div.bodyWindow input,
+div.bodyWindow textarea {
+    flex-grow: 1;
+    flex-basis: auto;
+    background-color: inherit;
+    color: black;
+    padding: 0;
+}
+
+div.bodyWindow input {
+    border: none;
+    border-bottom: 2px solid rgb(184, 184, 184);
+    transition: 200ms;
+}
+
+div.bodyWindow input.dateInput {
+    flex-grow: 0;
+    border: none;
+}
+
+div.bodyWindow input:disabled {
+    border-bottom: none;
+    transition: 200ms;
+}
+
+div.bodyWindow input:hover,
+div.bodyWindow textarea:hover {
+    border-color: rgb(160, 160, 160);
+    transition: 200ms;
+}
+
+div.bodyWindow input:focus,
+div.bodyWindow textarea:focus {
+    outline: none;
+    border-color: rgb(121, 121, 121);
+    transition: 200ms;
+}
+
+div.bodyWindow div.inputContainer {
+    display: flex;
+    margin-top: 0.4rem;
+}
+
+div.bodyWindow div.itemInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+div.bodyWindow label {
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+input.titleInput {
+    font-weight: bold;
+}
+
+div.bodyWindow textarea {
+    margin-bottom: 0.6rem;
+    border: 2px solid rgb(184, 184, 184);
+    transition: 200ms;
+}
+
+div.bodyWindow textarea:disabled {
+    border: none;
+    transition: 200ms;
+}
+
+.notifItem {
+    margin: 0;
+    display: inline;
+    padding: 0 5px;
+    background-color: rgb(237, 133, 133);
+    color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+div.bodyWindow button.newAddWindow {
+    display: flex;
+    align-items: center;
+    background-color: rgb(139, 235, 201);
+    color: white;
+    padding: 5px 14px 5px 8px;
+    font-size: 1rem;
+    margin: 0 auto;
+    transition: 100ms;
+}
+
+div.bodyWindow button.newAddWindow:hover {
+    background-color: rgb(176, 235, 213);
+    transition: 200ms;
+}
+
+button:focus {
+    outline: none;
+}
+
+div.bodyWindow button.newAddWindow:active {
+    background-color: white;
+    color: rgb(139, 235, 201);
+    transition: 100ms;
+}
+
+.newAddWindow i {
+    padding-right: 8px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.windowWarnContainer {
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 8px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+div.windowWarnContainer p {
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+}
+
+div.wipeBtnsContainer {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+div.wipeBtnsContainer button {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 6px 20px;
+    transition: 100ms;
+}
+
+.wipeBtnYes {
+    color: white;
+    background-color:rgb(133, 162, 237);
+    margin-right: 20px;
+    transition: 100ms;
+}
+
+.wipeBtnNo {
+    color: rgb(121, 121, 121);
+    border: 2px solid rgb(121, 121, 121);
+    transition: 200ms;
+}
+
+.wipeBtnYes:hover {
+    background-color: rgb(177, 194, 238);
+    transition: 200ms;
+}
+
+.wipeBtnYes:active {
+    background-color: white;
+    color: rgb(133, 162, 237);
+    transition: 100ms;
+}
+
+.wipeBtnNo:hover {
+    color: rgb(133, 162, 237);
+    border-color: rgb(133, 162, 237);
+    transition: 200ms;
+}
+
+.wipeBtn:active {
+    background-color:rgb(133, 162, 237);
+    color: white;
+}

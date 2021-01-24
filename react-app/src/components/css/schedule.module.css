@@ -1,0 +1,142 @@
+section ul {
+    margin-top: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    list-style: none;
+
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.btnContainer {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+section button.newAddWindow,
+.wipeWarnBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section button.newAddWindow div,
+.wipeWarnBtn div {
+    display: flex;
+    align-items: center;
+}
+
+section button.newAddWindow i,
+.wipeWarnBtn i {
+    margin-right: 8px;
+}
+
+.wipeWarnBtn {
+    margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+    .btnContainer {
+        margin: 20px 0;
+        align-self: center;
+        flex-direction: row;
+    }
+
+    .newAddWindow {
+        margin-right: 20px;
+    }
+
+    .wipeWarnBtn {
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    section ul {
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    section ul {
+        width: 62%;
+    }
+}
+
+@media (min-width: 1200px) {
+    section ul {
+        width: 51%;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+}
+
+ul li {
+    background-color: white;
+    border: 2px solid rgb(172, 172, 172);
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+section button.newAddWindow {
+    display: flex;
+    align-items: center;
+    background-color: rgb(139, 235, 201);
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    transition: 100ms;
+    white-space: nowrap;
+}
+
+section button.newAddWindow:hover {
+    background-color: rgb(176, 235, 213);
+    transition: 200ms;
+}
+
+button:focus {
+    outline: none;
+}
+
+section button.newAddWindow:active {
+    background-color: white;
+    color: rgb(139, 235, 201);
+    transition: 100ms;
+}
+
+.wipeWarnBtn {
+    display: flex;
+    background-color: rgb(235, 139, 139);
+    color: white;
+    padding: 5px;
+    font-size: 1rem;
+    transition: 100ms;
+    white-space: nowrap;
+}
+
+section button.wipeWarnBtn:hover {
+    background-color: rgb(235, 176, 176);
+    transition: 200ms;
+}
+
+section button.wipeWarnBtn:active {
+    background-color: white;
+    color: rgb(235, 139, 139);
+    transition: 100ms;
+}
