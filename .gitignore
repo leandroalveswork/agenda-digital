@@ -13,6 +13,7 @@
 
 # misc
 /react-app/.DS_Store
+/react-app/.env
 /react-app/.env.local
 /react-app/.env.development.local
 /react-app/.env.test.local
@@ -21,3 +22,5 @@
 /react-app/npm-debug.log*
 /react-app/yarn-debug.log*
 /react-app/yarn-error.log*
+
+/react-app/.eslintcache
