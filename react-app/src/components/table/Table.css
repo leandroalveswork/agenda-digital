@@ -1,0 +1,15 @@
+.th-button {
+    background-color: var(--agenda-th);
+}
+
+.min-width-sort-by-string {
+    min-width: 12.0em;
+}
+
+.min-width-sort-by-number {
+    min-width: 4.0em;
+}
+
+.min-width-sort-by-date {
+    min-width: 7.0em;
+}

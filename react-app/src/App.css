@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+:root {
+  --agenda-nav: rgb(124, 177, 233);
+  --agenda-main: rgb(237, 237, 237);
+  --agenda-th: rgb(172, 172, 172);
+  --agenda-error: rgb(237, 133, 133);
+  --agenda-success: rgb(100, 198, 164);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper {
+  background-color: var(--agenda-main);
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-nav {
+  background-color: var(--agenda-nav);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-nav-important {
+  background-color: var(--agenda-nav) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-ag-error {
+  background-color: var(--agenda-error);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-ag-error-important {
+  background-color: var(--agenda-error) !important;
+}
+
+.bg-ag-success {
+  background-color: var(--agenda-success);
+}
+
+.bg-ag-success-important {
+  background-color: var(--agenda-success) !important;
+}
+
+html, body, .overflow-x-hidden {
+  overflow-x: hidden
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll
+}
+
+.min-width-btn-common {
+  min-width: 80px
+}
+
+.borderless-btn {
+  border: 0;
+  background-color: inherit;
 }

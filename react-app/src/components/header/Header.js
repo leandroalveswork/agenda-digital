@@ -1,17 +1,11 @@
 import React from 'react'
-import SearchBar from './SearchBar'
-import css from '../css/header.module.css'
+import './Header.css'
 
-export default function Header({filterVal, onFilterChange}) {
+export default function Header() {
     return (
         <div>
-            <header className={css.under}>
-                <h2>_</h2>
-            </header>
-            <header>
-                <div></div>
-                <h2>Agenda</h2>
-                <SearchBar filterVal={filterVal} onFilterChange={onFilterChange}/>
+            <header className="d-flex justify-content-center text-white bg-nav">
+                <h2 className="p-2">Agenda</h2>
             </header>
         </div>
     )
